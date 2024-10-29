@@ -10,7 +10,7 @@ import model.*;
 import java.util.*;
 
 public class PersonaService {
-    private Set<Persona> personas = new LinkedHashSet<>();
+    private LinkedHashSet<Persona> personas = new LinkedHashSet<>();
 
     public Boolean añadirPersona(Persona p, Integer reactivos) throws noHayReactivosException {
             if(reactivos < 1){
@@ -23,7 +23,7 @@ public class PersonaService {
             }
             return true;
     }
-    public Set devolverPersonas(Persona p){
+    public LinkedHashSet devolverPersonas(){
         return personas;
     }
 

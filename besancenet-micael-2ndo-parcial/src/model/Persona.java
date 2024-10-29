@@ -1,6 +1,5 @@
 package model;
 
-import java.util.List;
 import java.util.Objects;
 
 public class Persona {
@@ -16,7 +15,7 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, Integer edad, Integer dni, String barrio, String ocupacion, Integer kit) {
+    public Persona(String nombre, String apellido, Integer edad, Integer dni, String barrio, String ocupacion) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
